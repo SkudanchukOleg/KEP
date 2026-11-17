@@ -1,0 +1,199 @@
+
+/* Основне оформлення */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181a1b;
+    color: #e5e7eb;
+    margin: 0;
+    padding: 0;
+}
+
+/* Головний блок */
+header {
+    background-color: #202426;
+    padding: 40px 20px;
+    border-bottom: 2px solid #3b82f6;
+}
+
+.profile {
+    max-width: 950px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.profile-text h1 {
+    font-size: 38px;
+    color: #60a5fa;
+}
+
+.profile-text h2 {
+    font-size: 20px;
+    color: #cbd5e1;
+}
+
+.hello {
+    color: #60a5fa;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+/* Фотографія */
+.profile-image {
+    text-align: center;
+}
+
+.profile-image img {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid #3b82f6;
+}
+
+/* Меню */
+nav {
+    background-color: #202426;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* Основний вміст */
+main {
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+/* Інформаційні блоки */
+section {
+    background-color: #202426;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: 1px solid #414749;
+}
+
+/* Заголовки */
+section h2 {
+    color: #60a5fa;
+    font-size: 25px;
+    border-bottom: 1px solid #414749;
+    padding-bottom: 12px;
+}
+
+h3 {
+    color: #cbd5e1;
+}
+
+/* Текст та списки */
+p, li {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+li::marker {
+    color: #60a5fa;
+}
+
+/* Таблиця знань */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #505659;
+    padding: 13px 10px;
+    text-align: left;
+}
+
+th {
+    color: #60a5fa;
+    background-color: #292e32;
+    font-size: 16px;
+}
+
+td {
+    color: #e5e7eb;
+}
+
+/* Чергування кольорів рядків */
+tr:nth-child(even) {
+    background-color: #25292b;
+}
+
+/* Ефект наведення на таблицю */
+tr:hover {
+    background-color: #303a46;
+    transition: 0.2s;
+}
+
+/* Мотиваційна фраза */
+blockquote {
+    border-left: 3px solid #60a5fa;
+    padding: 12px 18px;
+    margin: 20px 0 0;
+    color: #93c5fd;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+/* Нижня частина */
+footer {
+    background-color: #202426;
+    text-align: center;
+    padding: 18px;
+    color: #94a3b8;
+    margin-top: 40px;
+}
+
+/* Відображення на телефонах */
+@media (max-width: 600px) {
+    .profile {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .profile-text h1 {
+        font-size: 30px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 7px 5px;
+    }
+}
