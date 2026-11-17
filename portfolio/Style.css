@@ -197,3 +197,37 @@ footer {
         padding: 7px 5px;
     }
 }
+/* Форма зворотного зв'язку */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    color: #cbd5e1;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #505659;
+    border-radius: 6px;
+    background-color: #181a1b;
+    color: white;
+    font-size: 15px;
+}
+
+button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
